@@ -187,22 +187,38 @@
             return;
         }
 
-        // Simulate send
+        // Send via Formspree
         submitBtn.disabled = true;
         submitBtn.textContent = 'Sending…';
 
-        setTimeout(() => {
-            statusEl.textContent = '✓ Message sent! I\'ll get back to you soon.';
-            statusEl.className = 'form-status success';
-            form.reset();
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Send Message';
-
-            setTimeout(() => {
-                statusEl.textContent = '';
-                statusEl.className = 'form-status';
-            }, 5000);
-        }, 1200);
+        fetch('https://formspree.io/f/maqdlwne', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, message })
+        })
+            .then(res => {
+                if (res.ok) {
+                    statusEl.textContent = '✓ Message sent! I\'ll get back to you soon.';
+                    statusEl.className = 'form-status success';
+                    form.reset();
+                    setTimeout(() => {
+                        statusEl.textContent = '';
+                        statusEl.className = 'form-status';
+                    }, 5000);
+                } else {
+                    return res.json().then(data => {
+                        throw new Error(data.errors ? data.errors.map(e => e.message).join(', ') : 'Something went wrong.');
+                    });
+                }
+            })
+            .catch(err => {
+                statusEl.textContent = '✗ ' + err.message;
+                statusEl.className = 'form-status error';
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            });
     });
 
 
