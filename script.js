@@ -232,22 +232,22 @@
 
     const terminalScenarios = {
         stockout: {
-            query: 'Query: "Identify top SKU stockout risks in Midwest DC for next 30 days"',
-            answer: `• <strong>SKU-4820 (Marine Compressor)</strong>: 12 days supply remaining. Supplier lead time extended by +7 days.<br/>
-• <strong>Impact</strong>: Projected $180K revenue risk if not rebalanced.<br/>
-• <strong>Recommended Action</strong>: Re-route 320 units from Dallas warehouse via intercompany transfer.`
+            query: 'Query: "Identify top SKU stockout risks across Americas & APAC for next 30 days"',
+            answer: `• <strong>SKU-4820 (Marine Compressor)</strong>: 12 days supply remaining. Supplier lead time extended by +7 days across Americas portfolio.<br/>
+• <strong>Executive Risk Assessment</strong>: Projected $180K revenue risk; flagged in monthly C-suite S&amp;OP deck.<br/>
+• <strong>Consensus Action</strong>: Re-route 320 units from Dallas warehouse via D365 intercompany transfer order.`
         },
         so99: {
-            query: 'Query: "Analyze SO99+ forecast drift for Heating & Cooling catalog"',
-            answer: `• <strong>Model Diagnostics</strong>: Prophet ensemble achieved <strong>94.8% accuracy</strong> (+6.2% over baseline).<br/>
-• <strong>Seasonal Drift Detected</strong>: Q4 RV OEM ramp is +18% higher than historical prior.<br/>
-• <strong>Auto-Adjustment</strong>: Uplifted safety stock buffer by 420 units in Elkhart distribution hub.`
+            query: 'Query: "Analyze SO99+ / D365 forecast drift & E&O risk for Heating & Cooling catalog"',
+            answer: `• <strong>Forecast Model Diagnostics</strong>: Ensemble achieved <strong>+15% accuracy lift</strong> with daily WMAPE exception alerts.<br/>
+• <strong>E&amp;O Inventory Tracker</strong>: Early-warning algorithm prevented $340K from aging into write-off territory (part of $72M➔$31M total reduction).<br/>
+• <strong>NPI Ramp Tracking</strong>: SharePoint workflow auto-aligned ramp curve across 6,000 SKUs.`
         },
         rebalance: {
-            query: 'Query: "Generate executive SIOP stock rebalancing strategy"',
+            query: 'Query: "Generate executive SIOP stock rebalancing strategy for C-suite review"',
             answer: `• <strong>Capital Release Opportunity</strong>: $410K in excess safety stock identified in East Coast DC.<br/>
-• <strong>Transfers Generated</strong>: 4 automated replenishment orders dispatched to D365 ERP.<br/>
-• <strong>OTIF Forecast</strong>: Projected On-Time In-Full rate stabilized at <strong>98.4%</strong>.`
+• <strong>Transfers Dispatched</strong>: 4 automated replenishment orders dispatched to D365/DSX ERP.<br/>
+• <strong>OTIF Forecast</strong>: Projected On-Time In-Full rate stabilized at <strong>98.4%</strong> with 98% product availability across 38 launches.`
         }
     };
 
