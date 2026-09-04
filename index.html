@@ -7,18 +7,21 @@
   <meta name="description"
     content="Karthick Narayanen Murugan — Senior Data Scientist specializing in Supply Chain Analytics, Demand Forecasting, and Inventory Optimization based in Chicago, IL." />
   <meta name="keywords"
-    content="Data Scientist, Supply Chain Analytics, Demand Forecasting, Inventory Optimization, Python, Power BI, Machine Learning" />
+    content="Data Scientist, Supply Chain Analytics, Demand Forecasting, Inventory Optimization, Python, Power BI, Machine Learning, RAG Agents" />
   <meta property="og:title" content="Karthick Narayanen Murugan | Senior Data Scientist" />
   <meta property="og:description" content="Turning supply chain complexity into decisions that move the business." />
   <title>Karthick Narayanen Murugan | Senior Data Scientist, Supply Chain</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+
+  <!-- SPOTLIGHT LAYER -->
+  <div class="spotlight-layer" id="spotlight-layer" aria-hidden="true"></div>
 
   <!-- NAV -->
   <nav id="navbar" role="navigation" aria-label="Main navigation">
@@ -32,6 +35,7 @@
         <li role="none"><a href="#about" role="menuitem">About</a></li>
         <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
         <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#simulator" role="menuitem">Simulator</a></li>
         <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
         <li role="none"><a href="#certifications" role="menuitem">Certifications</a></li>
         <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
@@ -48,36 +52,46 @@
         <span>Chicago, IL · Supply Chain Analytics &amp; ML</span>
       </div>
       <h1 class="hero-name reveal">Karthick<br /><span class="name-accent">Narayanen</span> Murugan</h1>
-      <p class="hero-title reveal">Senior Data Scientist · Supply Chain</p>
-      <p class="hero-tagline reveal">Turning supply chain complexity into predictive decisions that move the business.</p>
+      <p class="hero-title reveal">Senior Data Scientist · Supply Chain Operations</p>
+      <p class="hero-tagline reveal">Turning high-volume supply chain complexity into predictive models, SIOP agents, and decisions that move global operations.</p>
+      
       <div class="hero-ctas reveal">
         <a href="#projects" class="btn btn-primary" id="view-projects-btn">
-          <span>Explore Projects</span>
+          <span>Explore Work</span>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
         </a>
-        <a href="Resume_Karthick_N_Murugan.pdf" class="btn btn-outline" id="download-resume-btn"
+        <a href="#simulator" class="btn btn-outline" id="try-simulator-btn">
+          <span>Live Simulator</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        </a>
+        <a href="Resume_Karthick_N_Murugan.pdf" class="btn btn-ghost" id="download-resume-btn"
           download="Resume_Karthick_N_Murugan.pdf">
-          <span>Download Resume</span>
+          <span>Resume (PDF)</span>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
         </a>
       </div>
+
       <div class="hero-links reveal">
         <a href="https://linkedin.com/in/knmurug2" target="_blank" rel="noopener noreferrer" id="linkedin-hero-link"
           class="social-link" aria-label="LinkedIn Profile">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path
               d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
           </svg>
-          linkedin.com/in/knmurug2
+          <span>linkedin.com/in/knmurug2</span>
         </a>
         <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" id="github-hero-link"
           class="social-link" aria-label="GitHub Profile">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path
               d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
           </svg>
-          github.com/knmurug3
+          <span>github.com/knmurug3</span>
         </a>
+        <button type="button" class="copy-email-btn" id="hero-copy-email" aria-label="Copy email to clipboard">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <span id="copy-email-label">knmurug2@gmail.com</span>
+        </button>
       </div>
     </div>
     <div class="hero-scroll-indicator" aria-hidden="true">
@@ -92,72 +106,62 @@
       <div class="section-label reveal">01 / About</div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <h2 class="section-heading">Building the data layer<br />behind smarter supply chains.</h2>
+          <h2 class="section-heading">Building the predictive layer<br />behind smarter supply chains.</h2>
           <p>
             I'm a Senior Data Scientist with 5+ years working deep inside global supply chain operations — from SIOP
-            planning and demand forecasting to inventory analytics and backorder management. I've spent my career
-            translating messy, high-volume supply chain data into models, dashboards, and tools that actually get used
-            by the people making decisions.
+            planning and demand forecasting to inventory analytics and backorder management. I translate messy, high-volume operational data into machine learning models, conversational AI agents, and automated tools that drive executive decisions.
           </p>
           <p>
-            Right now I'm at Dometic Corporation, where I build ML forecasting pipelines, AI-powered planning agents,
-            and analytics infrastructure across thousands of SKUs. Before that, I was doing energy data analytics at UIC
-            and supply chain work at Delphi TVS.
+            Currently at <strong>Dometic Corporation</strong>, where I lead ML forecasting pipelines across 6,000+ SKUs, architect RAG-based AI planning copilots, and maintain enterprise analytics infrastructure on Snowflake. Before that, I conducted energy data analytics at UIC and supply chain analytics at Delphi TVS.
           </p>
           <p>
-            I hold an <strong>MS in Industrial Engineering from the University of Illinois Chicago</strong> (GPA 4.0)
-            and I'm based in Chicago, IL. I like my models interpretable, my dashboards fast, and my pipelines
-            automated.
+            I hold an <strong>MS in Industrial Engineering from the University of Illinois Chicago (GPA 4.0)</strong>. I like my models interpretable, my data pipelines automated, and my decision latency near zero.
           </p>
+          
           <div class="about-stats">
             <div class="stat-item">
               <span class="stat-number">5+</span>
-              <span class="stat-label">Years in Supply Chain Analytics</span>
+              <span class="stat-label">Years in Supply Chain ML</span>
             </div>
             <div class="stat-item">
               <span class="stat-number">6K+</span>
-              <span class="stat-label">SKUs Tracked</span>
+              <span class="stat-label">Active SKUs Modeled</span>
             </div>
             <div class="stat-item">
               <span class="stat-number">4.0</span>
-              <span class="stat-label">MS GPA, UIC</span>
+              <span class="stat-label">MS GPA, UIC Chicago</span>
             </div>
           </div>
         </div>
+
         <div class="about-visual reveal">
           <div class="profile-card">
             <div class="profile-avatar" aria-hidden="true">
               <span>KN</span>
-              <div class="avatar-ring"></div>
             </div>
             <div class="profile-info">
               <div class="profile-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
                 <span>Chicago, IL</span>
               </div>
               <div class="profile-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  aria-hidden="true">
-                  <path
-                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.34-.35a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.34-.35a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                 </svg>
                 <span>knmurug2@gmail.com</span>
               </div>
               <div class="profile-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
                   <path d="M6 12v5c3 3 9 3 12 0v-5" />
                 </svg>
                 <span>MS Industrial Engineering, UIC</span>
               </div>
               <div class="profile-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
                   <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
                 </svg>
@@ -173,8 +177,8 @@
   <!-- SKILLS -->
   <section id="skills" aria-label="Skills section">
     <div class="container">
-      <div class="section-label reveal">02 / Skills</div>
-      <h2 class="section-heading reveal">Tools &amp; Technologies</h2>
+      <div class="section-label reveal">02 / Capabilities</div>
+      <h2 class="section-heading reveal">Technical Architecture &amp; Stack</h2>
       <div class="skills-grid">
 
         <div class="skill-category reveal">
@@ -190,9 +194,9 @@
             <span class="skill-tag">Python</span>
             <span class="skill-tag">R</span>
             <span class="skill-tag">Time Series</span>
-            <span class="skill-tag">Machine Learning</span>
-            <span class="skill-tag">scikit-learn</span>
             <span class="skill-tag">Prophet</span>
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">LightGBM</span>
             <span class="skill-tag">SO99+</span>
             <span class="skill-tag">DSX</span>
           </div>
@@ -206,15 +210,16 @@
                 <path d="M3 9h18M9 21V9" />
               </svg>
             </div>
-            <h3>BI &amp; Visualization</h3>
+            <h3>AI &amp; Visualization</h3>
           </div>
           <div class="skill-tags">
+            <span class="skill-tag">Copilot Studio</span>
+            <span class="skill-tag">RAG Architecture</span>
             <span class="skill-tag">Power BI</span>
             <span class="skill-tag">Tableau</span>
             <span class="skill-tag">Streamlit</span>
-            <span class="skill-tag">Copilot Studio</span>
-            <span class="skill-tag">Power Automate</span>
             <span class="skill-tag">DAX</span>
+            <span class="skill-tag">Power Automate</span>
           </div>
         </div>
 
@@ -227,7 +232,7 @@
                 <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
               </svg>
             </div>
-            <h3>Data Platforms</h3>
+            <h3>Data Platforms &amp; Ops</h3>
           </div>
           <div class="skill-tags">
             <span class="skill-tag">SQL</span>
@@ -235,6 +240,7 @@
             <span class="skill-tag">Azure</span>
             <span class="skill-tag">AWS</span>
             <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">CI/CD &amp; Git</span>
             <span class="skill-tag">ETL/ELT</span>
           </div>
         </div>
@@ -249,14 +255,14 @@
                 <line x1="12" y1="22.08" x2="12" y2="12" />
               </svg>
             </div>
-            <h3>Supply Chain</h3>
+            <h3>Supply Chain Domain</h3>
           </div>
           <div class="skill-tags">
             <span class="skill-tag">SIOP</span>
             <span class="skill-tag">Demand Forecasting</span>
-            <span class="skill-tag">Inventory Optimization</span>
-            <span class="skill-tag">Backorder Management</span>
-            <span class="skill-tag">D365</span>
+            <span class="skill-tag">Safety Stock</span>
+            <span class="skill-tag">Backorder Mitigation</span>
+            <span class="skill-tag">D365 ERP</span>
             <span class="skill-tag">SAP</span>
           </div>
         </div>
@@ -268,11 +274,22 @@
   <!-- PROJECTS -->
   <section id="projects" aria-label="Projects section">
     <div class="container">
-      <div class="section-label reveal">03 / Projects</div>
-      <h2 class="section-heading reveal">Featured Work</h2>
+      <div class="section-label reveal">03 / Featured Systems</div>
+      <h2 class="section-heading reveal">Selected Production Work</h2>
+      
+      <!-- Filter Bar -->
+      <div class="project-filters reveal" role="tablist" aria-label="Filter project cards">
+        <button class="filter-pill active" data-filter="all">All Systems (4)</button>
+        <button class="filter-pill" data-filter="ai">AI &amp; RAG (1)</button>
+        <button class="filter-pill" data-filter="ml">Machine Learning (1)</button>
+        <button class="filter-pill" data-filter="sop">S&amp;OP Simulation (1)</button>
+        <button class="filter-pill" data-filter="automation">Pipelines (1)</button>
+      </div>
+
       <div class="projects-grid">
 
-        <article class="project-card reveal" id="project-rag-agent">
+        <!-- PROJECT 1: RAG AGENT (HERO BENTO CARD) -->
+        <article class="project-card project-card-featured reveal" data-category="ai" id="project-rag-agent">
           <div class="project-card-top">
             <div class="project-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -281,29 +298,57 @@
                 <circle cx="12" cy="12" r="3" />
               </svg>
             </div>
-            <span class="project-badge">AI / RAG</span>
+            <span class="project-badge highlight">AI · RAG Architecture</span>
           </div>
-          <h3 class="project-title">RAG-Based AI Agent</h3>
-          <p class="project-desc">Natural language Q&amp;A interface over live forecast, inventory, and backorder data —
-            enabling planners to query complex datasets conversationally without writing a single SQL line.</p>
+          <h3 class="project-title">RAG-Based AI Supply Chain Copilot</h3>
+          <p class="project-desc">Natural language Q&amp;A interface over live forecast, inventory, and backorder data in Snowflake — enabling executive planners to query complex operational datasets conversationally with zero SQL knowledge.</p>
+          
+          <!-- Interactive Terminal Widget inside Card -->
+          <div class="interactive-terminal-wrapper">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="terminal-title">copilot-agent.v2 // live demo</span>
+              <span class="terminal-status"><span class="pulse-dot-sm"></span>ONLINE</span>
+            </div>
+            <div class="terminal-prompts">
+              <span class="prompts-label">Click Query:</span>
+              <button type="button" class="prompt-chip active" data-q="stockout">🚨 Top Stockout Risks</button>
+              <button type="button" class="prompt-chip" data-q="so99">📈 SKU Forecast Drift</button>
+              <button type="button" class="prompt-chip" data-q="rebalance">🔄 SIOP Rebalance Action</button>
+            </div>
+            <div class="terminal-body" id="rag-terminal-body">
+              <div class="term-line"><span class="term-prompt">&gt;</span> <span id="term-query-display">Query: "Identify top SKU stockout risks in Midwest DC for next 30 days"</span></div>
+              <div class="term-line term-context">[Snowflake Vector Search · Latency: 128ms · Relevance: 0.96]</div>
+              <div class="term-line term-answer" id="term-answer-display">
+                • <strong>SKU-4820 (Marine Compressor)</strong>: 12 days supply remaining. Supplier lead time extended by +7 days.<br/>
+                • <strong>Impact</strong>: Projected $180K revenue risk if not rebalanced.<br/>
+                • <strong>Recommended Action</strong>: Re-route 320 units from Dallas warehouse via intercompany transfer.
+              </div>
+            </div>
+          </div>
+
           <div class="project-tags" aria-label="Technologies used">
             <span class="ptag">Copilot Studio</span>
-            <span class="ptag">Power BI</span>
+            <span class="ptag">Snowflake</span>
             <span class="ptag">RAG Architecture</span>
+            <span class="ptag">Power BI</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" class="project-link"
               id="rag-github-link" aria-label="View RAG Agent on GitHub">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
               </svg>
-              View on GitHub
+              <span>View Source on GitHub</span>
             </a>
           </div>
         </article>
 
-        <article class="project-card reveal" id="project-ml-forecasting">
+        <!-- PROJECT 2: ML DEMAND FORECASTING -->
+        <article class="project-card reveal" data-category="ml" id="project-ml-forecasting">
           <div class="project-card-top">
             <div class="project-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -312,27 +357,28 @@
             </div>
             <span class="project-badge highlight">ML · +15% Accuracy</span>
           </div>
-          <h3 class="project-title">ML Demand Forecasting Models</h3>
-          <p class="project-desc">Time series, regression, and ensemble models delivering a 15% improvement in forecast
-            accuracy. Includes automated model selection based on item-level demand patterns.</p>
+          <h3 class="project-title">ML Demand Forecasting Engine</h3>
+          <p class="project-desc">Ensemble forecasting pipeline combining Prophet, gradient boosting, and statistical models. Features automated model selection across 6,000+ item-level demand patterns with automatic seasonality detection.</p>
           <div class="project-tags" aria-label="Technologies used">
             <span class="ptag">Python</span>
-            <span class="ptag">scikit-learn</span>
             <span class="ptag">Prophet</span>
+            <span class="ptag">scikit-learn</span>
+            <span class="ptag">Time Series</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" class="project-link"
               id="ml-github-link" aria-label="View ML Forecasting on GitHub">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
               </svg>
-              View on GitHub
+              <span>View Source on GitHub</span>
             </a>
           </div>
         </article>
 
-        <article class="project-card reveal" id="project-scenario-planning">
+        <!-- PROJECT 3: WHAT-IF TOOL -->
+        <article class="project-card reveal" data-category="sop" id="project-scenario-planning">
           <div class="project-card-top">
             <div class="project-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -340,28 +386,30 @@
                 <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
               </svg>
             </div>
-            <span class="project-badge">S&OP Planning</span>
+            <span class="project-badge">S&amp;OP Planning</span>
           </div>
-          <h3 class="project-title">What-If Scenario Planning Tool</h3>
-          <p class="project-desc">Interactive demand simulation tool for S&amp;OP planning sessions — letting planners
-            model demand shocks, promotions, and supply constraints in real time.</p>
+          <h3 class="project-title">What-If S&amp;OP Scenario Simulator</h3>
+          <p class="project-desc">Interactive demand simulation tool for weekly executive S&amp;OP planning sessions — modeling promotion spikes, supplier shortages, and dynamic safety stock requirements in real time.</p>
           <div class="project-tags" aria-label="Technologies used">
             <span class="ptag">Power BI</span>
             <span class="ptag">Streamlit</span>
+            <span class="ptag">Python</span>
+            <span class="ptag">DAX</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" class="project-link"
               id="scenario-github-link" aria-label="View What-If Tool on GitHub">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
               </svg>
-              View on GitHub
+              <span>View Source on GitHub</span>
             </a>
           </div>
         </article>
 
-        <article class="project-card reveal" id="project-reporting-pipelines">
+        <!-- PROJECT 4: AUTOMATED REPORTING -->
+        <article class="project-card reveal" data-category="automation" id="project-reporting-pipelines">
           <div class="project-card-top">
             <div class="project-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -371,53 +419,22 @@
             </div>
             <span class="project-badge">Automation · 6+ Pipelines</span>
           </div>
-          <h3 class="project-title">Automated Reporting Pipelines</h3>
-          <p class="project-desc">6+ end-to-end reporting pipelines covering forecast emails, PIPO tracking, and Share
-            of Shelf monitoring — eliminating hours of manual reporting weekly.</p>
+          <h3 class="project-title">Automated SIOP Reporting Pipelines</h3>
+          <p class="project-desc">6+ end-to-end automated pipelines covering forecast dissemination, Phase-In/Phase-Out (PIPO) inventory tracking, and Share of Shelf monitoring — eliminating 15+ hours of weekly manual reporting.</p>
           <div class="project-tags" aria-label="Technologies used">
             <span class="ptag">Python</span>
             <span class="ptag">SQL</span>
             <span class="ptag">Power Automate</span>
+            <span class="ptag">Snowflake</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" class="project-link"
               id="pipelines-github-link" aria-label="View Reporting Pipelines on GitHub">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
               </svg>
-              View on GitHub
-            </a>
-          </div>
-        </article>
-
-        <article class="project-card reveal" id="project-inventory-dashboard">
-          <div class="project-card-top">
-            <div class="project-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                <line x1="8" y1="21" x2="16" y2="21" />
-                <line x1="12" y1="17" x2="12" y2="21" />
-              </svg>
-            </div>
-            <span class="project-badge">6K+ SKUs</span>
-          </div>
-          <h3 class="project-title">Inventory Health Dashboard</h3>
-          <p class="project-desc">Enterprise-scale KPI and inventory health tracking across 6,000+ SKUs — covering
-            stockout risk, excess inventory, and OTIF metrics in a single live reporting layer.</p>
-          <div class="project-tags" aria-label="Technologies used">
-            <span class="ptag">Power BI</span>
-            <span class="ptag">Snowflake</span>
-            <span class="ptag">SQL</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" class="project-link"
-              id="inventory-github-link" aria-label="View Inventory Dashboard on GitHub">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-              </svg>
-              View on GitHub
+              <span>View Source on GitHub</span>
             </a>
           </div>
         </article>
@@ -426,11 +443,94 @@
     </div>
   </section>
 
+  <!-- LIVE SIMULATOR -->
+  <section id="simulator" aria-label="Interactive Supply Chain Simulator section">
+    <div class="container">
+      <div class="section-label reveal">04 / Interactive Engine</div>
+      <h2 class="section-heading reveal">Live Demand &amp; Inventory Simulator</h2>
+      <p class="simulator-intro reveal">Tweak supply chain volatility and service parameters below to run a real-time Monte Carlo forecast simulation and inspect inventory risk metrics.</p>
+
+      <div class="simulator-card reveal">
+        <div class="simulator-grid">
+          <!-- Controls -->
+          <div class="sim-controls">
+            <div class="sim-control-group">
+              <div class="sim-label-row">
+                <label for="slider-demand">Base Daily Demand</label>
+                <span class="sim-val" id="val-demand">450 units/day</span>
+              </div>
+              <input type="range" id="slider-demand" min="100" max="1000" value="450" step="10" />
+            </div>
+
+            <div class="sim-control-group">
+              <div class="sim-label-row">
+                <label for="slider-volatility">Demand Volatility (CV / σ)</label>
+                <span class="sim-val" id="val-volatility">18%</span>
+              </div>
+              <input type="range" id="slider-volatility" min="5" max="50" value="18" step="1" />
+            </div>
+
+            <div class="sim-control-group">
+              <div class="sim-label-row">
+                <label for="slider-service">Target Service Level</label>
+                <span class="sim-val" id="val-service">98.5% (2.17σ)</span>
+              </div>
+              <input type="range" id="slider-service" min="90" max="99.9" value="98.5" step="0.1" />
+            </div>
+
+            <div class="sim-control-group">
+              <div class="sim-label-row">
+                <label for="slider-leadtime">Supplier Lead Time</label>
+                <span class="sim-val" id="val-leadtime">14 days</span>
+              </div>
+              <input type="range" id="slider-leadtime" min="3" max="45" value="14" step="1" />
+            </div>
+
+            <!-- Real-time KPI Outputs -->
+            <div class="sim-metrics-panel">
+              <div class="sim-metric-box">
+                <span class="sm-label">Forecast Accuracy (1-MAPE)</span>
+                <span class="sm-value" id="kpi-mape">93.2%</span>
+              </div>
+              <div class="sim-metric-box">
+                <span class="sm-label">Stockout Probability</span>
+                <span class="sm-value" id="kpi-stockout">0.8%</span>
+              </div>
+              <div class="sim-metric-box highlight">
+                <span class="sm-label">Working Capital Impact</span>
+                <span class="sm-value" id="kpi-capital">-$384,500</span>
+              </div>
+              <div class="sim-metric-box">
+                <span class="sm-label">Optimal Safety Stock (ROP)</span>
+                <span class="sm-value" id="kpi-rop">7,420 units</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Canvas Visualizer -->
+          <div class="sim-visualizer">
+            <div class="sim-viz-header">
+              <div class="sim-legend">
+                <span class="leg-item leg-actual"><span class="leg-dot"></span>Actuals</span>
+                <span class="leg-item leg-forecast"><span class="leg-dot"></span>ML Prophet Line</span>
+                <span class="leg-item leg-buffer"><span class="leg-dot"></span>95% Confidence Band</span>
+              </div>
+              <span class="sim-chip">60-DAY MONTE CARLO</span>
+            </div>
+            <div class="sim-canvas-container">
+              <canvas id="sim-chart-canvas"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- EXPERIENCE -->
   <section id="experience" aria-label="Experience section">
     <div class="container">
-      <div class="section-label reveal">04 / Experience</div>
-      <h2 class="section-heading reveal">Career Timeline</h2>
+      <div class="section-label reveal">05 / Career Timeline</div>
+      <h2 class="section-heading reveal">Experience &amp; Leadership</h2>
       <div class="timeline">
 
         <div class="timeline-item reveal" id="exp-dometic">
@@ -441,16 +541,16 @@
           <div class="timeline-content">
             <div class="timeline-meta">
               <span class="timeline-period">Jun 2022 — Present</span>
-              <span class="timeline-tag active-tag">Current</span>
+              <span class="timeline-tag active-tag">Current Role</span>
             </div>
             <h3 class="timeline-role">Senior Data Scientist</h3>
-            <p class="timeline-company">Dometic Corporation</p>
+            <p class="timeline-company">Dometic Corporation · Chicago, IL</p>
             <ul class="timeline-bullets">
-              <li>Lead ML demand forecasting models using time series and ensemble methods across 6,000+ SKUs</li>
-              <li>Built RAG-based AI planning agent enabling natural language access to live supply chain data</li>
-              <li>Developed 6+ automated reporting pipelines for forecast, PIPO, and SoS monitoring</li>
-              <li>Architected inventory health dashboards on Snowflake + Power BI for global SIOP process</li>
-              <li>Designed what-if scenario planning tool used in weekly S&amp;OP sessions</li>
+              <li>Lead ML demand forecasting models using Prophet and ensemble methods across 6,000+ SKUs with +15% accuracy lift.</li>
+              <li>Architected RAG-based AI planning agent on Snowflake + Copilot Studio enabling conversational querying of live SIOP metrics.</li>
+              <li>Engineered 6+ automated reporting pipelines for forecast variance, PIPO tracking, and Share of Shelf monitoring.</li>
+              <li>Designed inventory health dashboards on Snowflake + Power BI supporting executive SIOP decision reviews.</li>
+              <li>Built what-if scenario simulation engine utilized in weekly operational planning meetings.</li>
             </ul>
           </div>
         </div>
@@ -465,11 +565,11 @@
               <span class="timeline-period">Feb 2021 — Mar 2022</span>
             </div>
             <h3 class="timeline-role">Energy Data Analyst</h3>
-            <p class="timeline-company">Energy Resources Center, UIC</p>
+            <p class="timeline-company">Energy Resources Center, University of Illinois Chicago</p>
             <ul class="timeline-bullets">
-              <li>Analyzed large-scale energy consumption datasets to surface efficiency opportunities</li>
-              <li>Built and maintained data pipelines and reporting dashboards for program evaluation</li>
-              <li>Supported research initiatives with statistical analysis and visualization</li>
+              <li>Analyzed large-scale facility energy consumption datasets to surface operational efficiency and cost-reduction opportunities.</li>
+              <li>Built and maintained automated data pipelines and reporting dashboards for multi-facility program evaluation.</li>
+              <li>Supported industrial research initiatives with rigorous statistical modeling and regression analysis.</li>
             </ul>
           </div>
         </div>
@@ -485,9 +585,9 @@
             <h3 class="timeline-role">Supply Chain Analyst</h3>
             <p class="timeline-company">Delphi TVS</p>
             <ul class="timeline-bullets">
-              <li>Supported demand planning and inventory management operations</li>
-              <li>Analyzed supply chain KPIs and generated operational reports for leadership</li>
-              <li>Coordinated with procurement and production teams to reduce backorder risk</li>
+              <li>Supported global demand planning, buffer calculation, and plant inventory management operations.</li>
+              <li>Analyzed operational supply chain KPIs and generated weekly executive performance scorecards.</li>
+              <li>Collaborated with procurement and production teams to identify bottleneck parts and reduce backorder risk.</li>
             </ul>
           </div>
         </div>
@@ -499,18 +599,18 @@
   <!-- CERTIFICATIONS -->
   <section id="certifications" aria-label="Certifications section">
     <div class="container">
-      <div class="section-label reveal">05 / Certifications</div>
-      <h2 class="section-heading reveal">Credentials</h2>
+      <div class="section-label reveal">06 / Credentials</div>
+      <h2 class="section-heading reveal">Certifications &amp; Accreditations</h2>
       <div class="certs-grid">
 
         <div class="cert-card reveal" id="cert-sixsigma">
           <div class="cert-icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
           </div>
           <h3 class="cert-name">Six Sigma Green Belt</h3>
-          <p class="cert-issuer">Process Excellence</p>
+          <p class="cert-issuer">Process Excellence &amp; Optimization</p>
           <div class="cert-bar" aria-hidden="true">
             <div class="cert-bar-fill" style="width: 100%;"></div>
           </div>
@@ -518,12 +618,12 @@
 
         <div class="cert-card reveal" id="cert-powerbi">
           <div class="cert-icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <rect x="3" y="3" width="18" height="18" rx="2" />
               <path d="M3 9h18M9 21V9" />
             </svg>
           </div>
-          <h3 class="cert-name">PL-300 Power BI</h3>
+          <h3 class="cert-name">PL-300 Power BI Data Analyst</h3>
           <p class="cert-issuer">Microsoft Certified</p>
           <div class="cert-bar" aria-hidden="true">
             <div class="cert-bar-fill" style="width: 100%;"></div>
@@ -532,7 +632,7 @@
 
         <div class="cert-card reveal" id="cert-tableau">
           <div class="cert-icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <line x1="18" y1="20" x2="18" y2="10" />
               <line x1="12" y1="20" x2="12" y2="4" />
               <line x1="6" y1="20" x2="6" y2="14" />
@@ -547,13 +647,13 @@
 
         <div class="cert-card reveal" id="cert-google">
           <div class="cert-icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <circle cx="11" cy="11" r="8" />
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
           </div>
-          <h3 class="cert-name">Google Data Analytics</h3>
-          <p class="cert-issuer">Google / Coursera</p>
+          <h3 class="cert-name">Google Data Analytics Professional</h3>
+          <p class="cert-issuer">Google</p>
           <div class="cert-bar" aria-hidden="true">
             <div class="cert-bar-fill" style="width: 100%;"></div>
           </div>
@@ -566,13 +666,13 @@
   <!-- CONTACT -->
   <section id="contact" aria-label="Contact section">
     <div class="container">
-      <div class="section-label reveal">06 / Contact</div>
+      <div class="section-label reveal">07 / Contact</div>
       <h2 class="section-heading reveal">Let's Connect</h2>
-      <p class="contact-intro reveal">Have a project, question, or just want to talk supply chain and data? I'm always
-        open to a conversation.</p>
+      <p class="contact-intro reveal">Interested in discussing supply chain analytics, ML forecasting architecture, or AI planning agents? I'm always open to talking shop.</p>
+      
       <div class="contact-grid">
         <div class="contact-info reveal">
-          <h3>Get in touch</h3>
+          <h3>Direct Channels</h3>
           <div class="contact-links">
             <a href="mailto:knmurug2@gmail.com" class="contact-item" id="email-contact-link" aria-label="Send email">
               <div class="contact-item-icon" aria-hidden="true">
@@ -582,7 +682,7 @@
                 </svg>
               </div>
               <div>
-                <span class="contact-item-label">Email</span>
+                <span class="contact-item-label">Direct Email</span>
                 <span class="contact-item-value">knmurug2@gmail.com</span>
               </div>
             </a>
@@ -614,6 +714,7 @@
             </a>
           </div>
         </div>
+
         <form class="contact-form reveal" id="contact-form" novalidate>
           <div class="form-group">
             <label for="contact-name">Name</label>
@@ -621,15 +722,16 @@
           </div>
           <div class="form-group">
             <label for="contact-email">Email</label>
-            <input type="email" id="contact-email" name="email" placeholder="your@email.com" autocomplete="email"
-              required />
+            <input type="email" id="contact-email" name="email" placeholder="your@email.com" autocomplete="email" required />
           </div>
           <div class="form-group">
             <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="message" rows="5" placeholder="What's on your mind?"
-              required></textarea>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Let's discuss demand modeling, SIOP copilot architecture, or data strategy..." required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">Send Message</button>
+          <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">
+            <span>Send Message</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
           <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
         </form>
       </div>
@@ -640,12 +742,10 @@
   <footer id="footer" role="contentinfo">
     <div class="container">
       <div class="footer-inner">
-        <p class="footer-copy">&copy; 2026 Karthick Narayanen Murugan · Built with intention.</p>
+        <p class="footer-copy">&copy; 2026 Karthick Narayanen Murugan · Engineered with Taste Skill.</p>
         <div class="footer-links">
-          <a href="https://linkedin.com/in/knmurug2" target="_blank" rel="noopener noreferrer" id="linkedin-footer-link"
-            aria-label="LinkedIn">LinkedIn</a>
-          <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" id="github-footer-link"
-            aria-label="GitHub">GitHub</a>
+          <a href="https://linkedin.com/in/knmurug2" target="_blank" rel="noopener noreferrer" id="linkedin-footer-link" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" id="github-footer-link" aria-label="GitHub">GitHub</a>
           <a href="mailto:knmurug2@gmail.com" id="email-footer-link" aria-label="Email">Email</a>
         </div>
       </div>
