@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260904b" />
+  <link rel="stylesheet" href="styles.css?v=20260904c" />
 </head>
 
 <body>
@@ -284,11 +284,12 @@
       
       <!-- Filter Bar -->
       <div class="project-filters reveal" role="tablist" aria-label="Filter project cards">
-        <button class="filter-pill active" data-filter="all">All Systems (4)</button>
+        <button class="filter-pill active" data-filter="all">All Systems (5)</button>
         <button class="filter-pill" data-filter="ai">AI &amp; RAG (1)</button>
         <button class="filter-pill" data-filter="ml">Machine Learning (1)</button>
-        <button class="filter-pill" data-filter="sop">S&amp;OP Simulation (1)</button>
-        <button class="filter-pill" data-filter="automation">Pipelines (1)</button>
+        <button class="filter-pill" data-filter="sop">S&amp;OP &amp; Supply (1)</button>
+        <button class="filter-pill" data-filter="inventory">E&amp;O Inventory (1)</button>
+        <button class="filter-pill" data-filter="npi">NPI &amp; PIPO (1)</button>
       </div>
 
       <div class="projects-grid">
@@ -303,10 +304,10 @@
                 <circle cx="12" cy="12" r="3" />
               </svg>
             </div>
-            <span class="project-badge highlight">AI · RAG Architecture</span>
+            <span class="project-badge highlight">AI · RAG Architecture · -40% Turnaround</span>
           </div>
           <h3 class="project-title">RAG-Based AI Supply Chain Copilot</h3>
-          <p class="project-desc">Natural language Q&amp;A interface over live forecast, inventory, and backorder data in Snowflake — enabling executive planners to query complex operational datasets conversationally with zero SQL knowledge.</p>
+          <p class="project-desc">Natural language AI agent integrated with Power BI via Microsoft Copilot Studio — enabling planners and executives to query live forecast, inventory, and backorder data conversationally and cutting ad hoc report turnaround by 40%.</p>
           
           <!-- Interactive Terminal Widget inside Card -->
           <div class="interactive-terminal-wrapper">
@@ -327,9 +328,9 @@
               <div class="term-line"><span class="term-prompt">&gt;</span> <span id="term-query-display">Query: "Identify top SKU stockout risks in Midwest DC for next 30 days"</span></div>
               <div class="term-line term-context">[Snowflake Vector Search · Latency: 128ms · Relevance: 0.96]</div>
               <div class="term-line term-answer" id="term-answer-display">
-                • <strong>SKU-4820 (Marine Compressor)</strong>: 12 days supply remaining. Supplier lead time extended by +7 days.<br/>
-                • <strong>Impact</strong>: Projected $180K revenue risk if not rebalanced.<br/>
-                • <strong>Recommended Action</strong>: Re-route 320 units from Dallas warehouse via intercompany transfer.
+                • <strong>SKU-4820 (Marine Compressor)</strong>: 12 days supply remaining. Supplier lead time extended by +7 days across Americas portfolio.<br/>
+                • <strong>Impact</strong>: Projected $180K revenue risk if not rebalanced; flagged in monthly C-suite S&amp;OP deck.<br/>
+                • <strong>Recommended Action</strong>: Re-route 320 units from Dallas warehouse via D365 intercompany transfer.
               </div>
             </div>
           </div>
@@ -339,6 +340,7 @@
             <span class="ptag">Snowflake</span>
             <span class="ptag">RAG Architecture</span>
             <span class="ptag">Power BI</span>
+            <span class="ptag">Python</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" class="project-link"
@@ -360,15 +362,16 @@
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
               </svg>
             </div>
-            <span class="project-badge highlight">ML · +15% Accuracy</span>
+            <span class="project-badge highlight">ML · +15% Accuracy Lift</span>
           </div>
-          <h3 class="project-title">ML Demand Forecasting Engine</h3>
-          <p class="project-desc">Ensemble forecasting pipeline combining Prophet, gradient boosting, and statistical models. Features automated model selection across 6,000+ item-level demand patterns with automatic seasonality detection.</p>
+          <h3 class="project-title">ML Demand Forecasting &amp; Bias Alerts</h3>
+          <p class="project-desc">Ensemble forecasting pipeline combining Prophet, gradient boosting, and statistical models. Features automated model selection across 6,000+ item patterns supported by automated daily MAPE/WMAPE exception pipelines with planner bias alerts.</p>
           <div class="project-tags" aria-label="Technologies used">
             <span class="ptag">Python</span>
             <span class="ptag">Prophet</span>
             <span class="ptag">scikit-learn</span>
-            <span class="ptag">Time Series</span>
+            <span class="ptag">WMAPE Pipeline</span>
+            <span class="ptag">SQL</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" class="project-link"
@@ -382,7 +385,7 @@
           </div>
         </article>
 
-        <!-- PROJECT 3: WHAT-IF TOOL -->
+        <!-- PROJECT 3: 25-MONTH FORWARD SUPPLY PLAN ENGINE -->
         <article class="project-card reveal" data-category="sop" id="project-scenario-planning">
           <div class="project-card-top">
             <div class="project-icon" aria-hidden="true">
@@ -391,19 +394,20 @@
                 <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
               </svg>
             </div>
-            <span class="project-badge">S&amp;OP Planning</span>
+            <span class="project-badge">S&amp;OP · 25-Month Forward Engine</span>
           </div>
-          <h3 class="project-title">What-If S&amp;OP Scenario Simulator</h3>
-          <p class="project-desc">Interactive demand simulation tool for weekly executive S&amp;OP planning sessions — modeling promotion spikes, supplier shortages, and dynamic safety stock requirements in real time.</p>
+          <h3 class="project-title">25-Month Forward S&amp;OP Plan Engine</h3>
+          <p class="project-desc">25-month forward supply planning engine pulling from D365 and DSX SQL — generating constrained and unconstrained forecasts with current-month proration, feeding What-If scenario simulations for monthly executive S&amp;OP consensus.</p>
           <div class="project-tags" aria-label="Technologies used">
+            <span class="ptag">D365 SQL</span>
+            <span class="ptag">DSX</span>
             <span class="ptag">Power BI</span>
             <span class="ptag">Streamlit</span>
             <span class="ptag">Python</span>
-            <span class="ptag">DAX</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" class="project-link"
-              id="scenario-github-link" aria-label="View What-If Tool on GitHub">
+              id="scenario-github-link" aria-label="View S&OP Engine on GitHub">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
@@ -413,28 +417,59 @@
           </div>
         </article>
 
-        <!-- PROJECT 4: AUTOMATED REPORTING -->
-        <article class="project-card reveal" data-category="automation" id="project-reporting-pipelines">
+        <!-- PROJECT 4: E&O INVENTORY TOOL -->
+        <article class="project-card reveal" data-category="inventory" id="project-eo-inventory">
           <div class="project-card-top">
             <div class="project-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
               </svg>
             </div>
-            <span class="project-badge">Automation · 6+ Pipelines</span>
+            <span class="project-badge highlight">E&amp;O · -57% Cut ($72M➔$31M)</span>
           </div>
-          <h3 class="project-title">Automated SIOP Reporting Pipelines</h3>
-          <p class="project-desc">6+ end-to-end automated pipelines covering forecast dissemination, Phase-In/Phase-Out (PIPO) inventory tracking, and Share of Shelf monitoring — eliminating 15+ hours of weekly manual reporting.</p>
+          <h3 class="project-title">Automated E&amp;O Inventory Engine</h3>
+          <p class="project-desc">Automated D365 &amp; SQL-based excess and obsolete reporting engine reducing E&amp;O inventory by 57% ($72M to $31M) — providing early-warning visibility into at-risk stock before aging into write-off territory.</p>
           <div class="project-tags" aria-label="Technologies used">
-            <span class="ptag">Python</span>
+            <span class="ptag">D365 ERP</span>
             <span class="ptag">SQL</span>
-            <span class="ptag">Power Automate</span>
-            <span class="ptag">Snowflake</span>
+            <span class="ptag">Power BI</span>
+            <span class="ptag">Inventory Optimization</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" class="project-link"
-              id="pipelines-github-link" aria-label="View Reporting Pipelines on GitHub">
+              id="eo-github-link" aria-label="View E&O Engine on GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+              <span>View Source on GitHub</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 5: NPI & PIPO ENGINE -->
+        <article class="project-card reveal" data-category="npi" id="project-npi-pipo">
+          <div class="project-card-top">
+            <div class="project-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <span class="project-badge highlight">NPI · -31% Launch Error</span>
+          </div>
+          <h3 class="project-title">Global NPI &amp; PIPO Visibility Engine</h3>
+          <p class="project-desc">SharePoint &amp; Graph API workflow engine tracking intro dates, ramp curves, and phase-out transitions across 38 new product launches — cutting launch forecast error by 31% across Americas, EU, and APAC with 98% availability.</p>
+          <div class="project-tags" aria-label="Technologies used">
+            <span class="ptag">SharePoint</span>
+            <span class="ptag">MS Graph API</span>
+            <span class="ptag">Power Automate</span>
+            <span class="ptag">D365</span>
+            <span class="ptag">Global SIOP</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/knmurug3" target="_blank" rel="noopener noreferrer" class="project-link"
+              id="npi-github-link" aria-label="View NPI Engine on GitHub">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
@@ -762,7 +797,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20260904b"></script>
+  <script src="script.js?v=20260904c"></script>
 </body>
 
 </html>
