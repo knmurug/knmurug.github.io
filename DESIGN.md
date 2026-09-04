@@ -1,17 +1,18 @@
 # Karthick Narayanen Murugan — Portfolio Design System Specification (`DESIGN.md`)
 > Standardized under the VoltAgent/awesome-design-md & Stitch 9-Section Design Protocol.
+> Theme: Cyber-Emerald / Linear Stealth Dark
 
 ---
 
 ## 1. Visual Theme & Atmosphere
-- **Aesthetic Direction**: High-Precision Dark Engineering Cockpit / Clean Modern Technical Portfolio.
-- **Mood & Tone**: Engineered, authoritative, data-driven, elegant, uncluttered.
-- **Density & Scale**: Balanced high-density technical cards with generous section margins (`padding: 90px 0`).
+- **Aesthetic Direction**: High-Precision Linear Stealth Dark / Cyber-Emerald Engineering Cockpit.
+- **Mood & Tone**: Engineered, authoritative, data-driven, elegant, high contrast.
+- **Density & Scale**: Balanced high-density technical cards with generous section rhythm (`padding: 90px 0`).
 - **Signature Visual Accents**:
-  - Radial cursor spotlight (`#spotlight-layer`) tracking mouse movement (`rgba(0, 229, 208, 0.05)`).
+  - Radial cursor spotlight tracking mouse movement with emerald tint (`rgba(16, 185, 129, 0.06)`).
   - Subtle micro-dot matrix pattern across canvas.
-  - 1px crisp translucent borders with subtle top inset specular highlights (`inset 0 1px 0 rgba(255, 255, 255, 0.08)`).
-  - Electric Teal glowing badges and interactive terminals.
+  - 1px crisp translucent borders with top inset specular highlights (`inset 0 1px 0 rgba(255, 255, 255, 0.09)`).
+  - Cyber-Emerald glowing badges, animated pill highlights, and interactive terminals.
 
 ---
 
@@ -19,20 +20,20 @@
 Semantic tokens mapped to exact CSS custom properties:
 
 ### Background Layers
-- `--bg-950` (`#06070a`): Deepest viewport canvas.
-- `--bg-900` (`#090b10`): Primary page body background.
-- `--bg-850` (`#0d1017`): Section contrast alternating background.
-- `--bg-card` (`#0e121a`): Default card & container surface.
-- `--bg-card-hover` (`#141926`): Interactive elevated card hover state.
-- `--bg-glass` (`rgba(14, 18, 26, 0.75)`): Frosted backdrop blur for navigation.
+- `--bg-950` (`#040608`): Deepest obsidian viewport canvas.
+- `--bg-900` (`#07090e`): Primary page body background.
+- `--bg-850` (`#0b0e15`): Section contrast alternating background.
+- `--bg-card` (`#0c1018`): Default card & container surface.
+- `--bg-card-hover` (`#111722`): Interactive elevated card hover state.
+- `--bg-glass` (`rgba(12, 16, 24, 0.82)`): Frosted backdrop blur for navigation.
 
-### Brand & Accent Tokens
-- `--accent` (`#00e5d0`): Electric Teal primary action & highlight token.
-- `--accent-hover` (`#1affec`): Vivid teal hover state.
-- `--accent-dim` (`#00b8a6`): Muted teal for borders and secondary accents.
-- `--accent-glow` (`rgba(0, 229, 208, 0.18)`): Atmospheric glow around focused elements.
-- `--accent-glow-sm` (`rgba(0, 229, 208, 0.08)`): Subtle ambient glow.
-- `--accent-bg` (`rgba(0, 229, 208, 0.08)`): Translucent pill and badge background.
+### Brand & Accent Tokens (Cyber-Emerald)
+- `--accent` (`#10b981`): Cyber-Emerald primary action & highlight token.
+- `--accent-hover` (`#34d399`): Vivid mint/emerald hover state.
+- `--accent-dim` (`#059669`): Muted deep emerald for borders and secondary accents.
+- `--accent-glow` (`rgba(16, 185, 129, 0.22)`): Atmospheric glow around focused elements.
+- `--accent-glow-sm` (`rgba(16, 185, 129, 0.09)`): Subtle ambient glow.
+- `--accent-bg` (`rgba(16, 185, 129, 0.08)`): Translucent pill and badge background.
 
 ### Typography & Foreground
 - `--text-100` (`#f8fafc`): 100% white foreground (Headings, active buttons, key numbers).
@@ -42,8 +43,8 @@ Semantic tokens mapped to exact CSS custom properties:
 
 ### Borders & Dividers
 - `--border` (`rgba(255, 255, 255, 0.08)`): Default subtle perimeter border.
-- `--border-highlight` (`rgba(255, 255, 255, 0.15)`): Focused/hover card border.
-- `--border-accent` (`rgba(0, 229, 208, 0.4)`): Active primary state border.
+- `--border-highlight` (`rgba(255, 255, 255, 0.16)`): Focused/hover card border.
+- `--border-accent` (`rgba(16, 185, 129, 0.45)`): Active primary state border.
 
 ---
 
@@ -51,7 +52,7 @@ Semantic tokens mapped to exact CSS custom properties:
 
 ### Font Families
 - **Primary Display & Body**: `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`
-- **Monospace & Data**: `'JetBrains Mono', 'IBM Plex Mono', monospace` (Used for KPI values, terminal prompts, simulation metrics, dates, badges).
+- **Monospace & Data**: `'JetBrains Mono', 'IBM Plex Mono', monospace` (Applied to KPI numbers, terminal prompts, simulation metrics, dates, badges).
 
 ### Type Hierarchy & Scales
 | Level | Font Size | Line Height | Letter Spacing | Font Weight | Target Element |
@@ -70,13 +71,13 @@ Semantic tokens mapped to exact CSS custom properties:
 - **Background**: `var(--bg-card)`
 - **Border**: `1px solid var(--border)`
 - **Radius**: `var(--radius-md)` (12px) or `var(--radius-lg)` (20px)
-- **Shadow**: `inset 0 1px 0 rgba(255,255,255,0.08), 0 4px 20px rgba(0,0,0,0.3)`
+- **Shadow**: `inset 0 1px 0 rgba(255,255,255,0.09), 0 4px 20px rgba(0,0,0,0.3)`
 - **Hover State**: `transform: translateY(-3px)`, `border-color: var(--border-highlight)`, `box-shadow: 0 12px 30px rgba(0,0,0,0.5), 0 0 25px var(--accent-glow-sm)`.
 
 ### Buttons & Action Links
 - **Primary CTA (`.btn-primary`)**:
-  - Background: `var(--accent)`
-  - Color: `#06070a` (Solid high-contrast black)
+  - Background: `var(--accent)` (`#10b981`)
+  - Color: `#040608` (Solid high-contrast black)
   - Weight: 600
   - Hover: `background: var(--accent-hover)`, `box-shadow: 0 0 20px var(--accent-glow)`
 - **Secondary CTA (`.btn-secondary`, `.btn-ghost`)**:
@@ -84,16 +85,6 @@ Semantic tokens mapped to exact CSS custom properties:
   - Border: `1px solid var(--border)`
   - Color: `var(--text-100)`
   - Hover: `background: rgba(255, 255, 255, 0.1)`, `border-color: var(--border-highlight)`
-
-### Interactive RAG AI Terminal (`.terminal-widget`)
-- Background: `#06070a` (Deep black inset console)
-- Header: macOS style 3-dot window controls (`#ff5f56`, `#ffbd2e`, `#27c93f`)
-- Font: `'JetBrains Mono'`
-- Output: Teal prompt arrows (`>`), white query responses, instant response chips.
-
-### Interactive Monte Carlo Simulator Canvas (`#sim-canvas`)
-- Dark cockpit styling with live dual-slider controls (`Supply Variability`, `Lead Time Delay`).
-- Real-time KPI counter cards with monospace digital readout.
 
 ---
 
@@ -115,35 +106,11 @@ Semantic tokens mapped to exact CSS custom properties:
 ---
 
 ## 7. Do's and Don'ts (Guardrails)
-
-### Do
-- Always use `JetBrains Mono` for numeric stats, data metrics, code snippets, and timestamps.
-- Always use `var(--accent)` (`#00e5d0`) for primary interactive cues.
-- Always ensure text contrast ratios exceed `4.5:1` on all surfaces.
-- Always add subtle transitions (`0.22s cubic-bezier(0.16, 1, 0.3, 1)`) for smooth UI responses.
-
-### Don't
-- Never use generic saturated pure blue (`#0000ff`) or harsh purple gradients.
-- Never use pure white backgrounds or harsh unpadded card borders.
-- Never create layout shifts during live data calculation or filter toggling.
+- **Do**: Strictly utilize `#10b981` / `#34d399` for interactive signals.
+- **Do**: Retain `JetBrains Mono` for numeric stats, data metrics, code snippets, and timestamps.
+- **Don't**: Mix conflicting neon colors or harsh unpadded borders.
 
 ---
 
-## 8. Responsive Behavior & Breakpoints
-- **Mobile (<640px)**:
-  - Navigation switches to sliding mobile drawer (`#nav-links.open`).
-  - Bento grid collapses to 1-column stack.
-  - Hero statistics stack vertically with `gap: 12px`.
-  - Simulator sliders expand to 100% width with 48px touch targets.
-- **Tablet (640px - 1024px)**:
-  - 2-column bento layouts.
-  - Full horizontal filter pill bar with auto-scroll.
-- **Desktop (>1024px)**:
-  - 3-column bento grids, sticky nav with backdrop blur, mouse-tracking spotlight active.
-
----
-
-## 9. Agent Prompt Directives
-When implementing or refactoring features in this repository, coding agents must adhere to the following directive:
-
-> *"Follow the tokens, typography scales, bento card patterns, and color roles explicitly documented in `DESIGN.md`. Do not introduce new inline hex codes or arbitrary font families. All changes must align with the Electric Teal (#00e5d0) / Deep Dark (#090b10) design system."*
+## 8. Agent Prompt Directives
+> *"All styling changes must follow the Cyber-Emerald / Linear Stealth Dark tokens defined in `DESIGN.md` with base #07090e and accent #10b981."*

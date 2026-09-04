@@ -48,7 +48,7 @@
 
         function drawHero() {
             ctx.clearRect(0, 0, W, H);
-            const TEAL = '0,229,208';
+            const EMERALD = '16, 185, 129';
             const CONN_DIST = 135;
 
             // Connections
@@ -62,7 +62,7 @@
                         ctx.beginPath();
                         ctx.moveTo(nodes[i].x, nodes[i].y);
                         ctx.lineTo(nodes[j].x, nodes[j].y);
-                        ctx.strokeStyle = `rgba(${TEAL},${alpha})`;
+                        ctx.strokeStyle = `rgba(${EMERALD},${alpha})`;
                         ctx.lineWidth = 0.65;
                         ctx.stroke();
                     }
@@ -73,7 +73,7 @@
             nodes.forEach(n => {
                 ctx.beginPath();
                 ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(${TEAL},0.6)`;
+                ctx.fillStyle = `rgba(${EMERALD},0.65)`;
                 ctx.fill();
             });
 
@@ -367,10 +367,10 @@
                 sCtx.lineTo(x, y);
             }
             sCtx.closePath();
-            sCtx.fillStyle = 'rgba(0, 229, 208, 0.08)';
+            sCtx.fillStyle = 'rgba(16, 185, 129, 0.12)';
             sCtx.fill();
 
-            // Draw Forecast Line (Teal)
+            // Draw Forecast Line (Cyber Emerald)
             sCtx.beginPath();
             for (let i = 0; i < points; i++) {
                 const x = i * stepX;
@@ -378,7 +378,7 @@
                 if (i === 0) sCtx.moveTo(x, y);
                 else sCtx.lineTo(x, y);
             }
-            sCtx.strokeStyle = '#00e5d0';
+            sCtx.strokeStyle = '#10b981';
             sCtx.lineWidth = 2.4;
             sCtx.stroke();
 

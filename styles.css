@@ -1,8 +1,8 @@
 /* ===================================================
    PORTFOLIO — Karthick Narayanen Murugan
-   Design System: Taste Skill Anti-Slop Master Edition
+   Design System: Linear Stealth Dark / Cyber-Emerald
    Typography: Inter Display + JetBrains Mono
-   Calibrated Accent: Electric Teal (#00e5d0)
+   Calibrated Accent: Cyber-Emerald (#10b981 / #34d399)
    =================================================== */
 
 /* ---------- RESET & BASE ---------- */
@@ -15,20 +15,20 @@
 }
 
 :root {
-    --bg-950: #06070a;
-    --bg-900: #090b10;
-    --bg-850: #0d1017;
-    --bg-800: #121622;
-    --bg-card: #0e121a;
-    --bg-card-hover: #141926;
-    --bg-glass: rgba(14, 18, 26, 0.75);
+    --bg-950: #040608;
+    --bg-900: #07090e;
+    --bg-850: #0b0e15;
+    --bg-800: #0f141f;
+    --bg-card: #0c1018;
+    --bg-card-hover: #111722;
+    --bg-glass: rgba(12, 16, 24, 0.82);
 
-    --accent: #00e5d0;
-    --accent-hover: #1affec;
-    --accent-dim: #00b8a6;
-    --accent-glow: rgba(0, 229, 208, 0.18);
-    --accent-glow-sm: rgba(0, 229, 208, 0.08);
-    --accent-bg: rgba(0, 229, 208, 0.08);
+    --accent: #10b981;
+    --accent-hover: #34d399;
+    --accent-dim: #059669;
+    --accent-glow: rgba(16, 185, 129, 0.22);
+    --accent-glow-sm: rgba(16, 185, 129, 0.09);
+    --accent-bg: rgba(16, 185, 129, 0.08);
 
     --text-100: #f8fafc;
     --text-200: #cbd5e1;
@@ -36,9 +36,9 @@
     --text-400: #64748b;
 
     --border: rgba(255, 255, 255, 0.08);
-    --border-highlight: rgba(255, 255, 255, 0.15);
-    --border-accent: rgba(0, 229, 208, 0.4);
-    --inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    --border-highlight: rgba(255, 255, 255, 0.16);
+    --border-accent: rgba(16, 185, 129, 0.45);
+    --inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.09);
 
     --radius-sm: 6px;
     --radius-md: 12px;
