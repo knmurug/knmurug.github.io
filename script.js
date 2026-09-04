@@ -34,7 +34,7 @@
     function drawCanvas() {
         ctx.clearRect(0, 0, W, H);
 
-        const TEAL = '0,212,200';
+        const TEAL = '0,229,208';
         const CONN_DIST = 130;
 
         // Draw connections
